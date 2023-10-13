@@ -4,7 +4,11 @@
 //
 //  Created by Ashton Reed Humphrey on 10/1/23.
 //
-
+/**
+ NOTES:
+    This App works with taking in the input of the city and the state and returns the tempature in kelvin
+    Given more time I would have love to written test for this component
+ */
 import UIKit
 import CoreLocation
 
@@ -52,6 +56,8 @@ class SearchWeatherViewController: UIViewController, CLLocationManagerDelegate {
     func getData() {
         let cityValue = cityTextField.text ?? ""
         let stateValue = stateTextField.text ?? ""
+        
+        //This gets the current location and returns the tempature in kelvin
         
  //       getCurrentLocation { city, state, error in
             
